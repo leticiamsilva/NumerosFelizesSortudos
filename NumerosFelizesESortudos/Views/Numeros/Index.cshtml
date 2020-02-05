@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Numeros!";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Números Felizes e Sortudos</h1>
+
+        <p>Digite o número e descubra se ele é feliz ou sortudo:</p>
+
+        <form method="post" action="/Numeros/VerificaClassificacaoNumero">
+            <input type="text" name="NumeroEscolhido" />
+            <input type="submit" value="Verificar" />
+            
+            <p>@ViewData["Classificacao"]</p>
+        </form>
+</div>
